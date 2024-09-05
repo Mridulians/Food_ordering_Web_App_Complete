@@ -10,7 +10,7 @@ const stripe = new Stripe("sk_test_51PusyT2K8gOGgzpGZT5hFlnkMkbcmut0ouwjClGwKhqA
 const placeOrder = async (req , res) =>{
 
 
-     const frontend_url = "http://localhost:5174"
+     const frontend_url = "https://food-ordering-frontend-uly6.onrender.com"
 
     try {
          

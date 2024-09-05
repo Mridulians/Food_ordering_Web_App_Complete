@@ -12,7 +12,7 @@ import { Routes , Route} from 'react-router-dom'
 
 const App = () => {
     
-  const url = 'http://localhost:4000';
+  const url = 'https://food-ordering-web-app-complete.onrender.com';
 
   return (
     <div>

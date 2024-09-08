@@ -11,6 +11,7 @@ const Add = ({url}) => {
   const [data , setData] = useState({
     name:"",
     description:"",
+    desc2:"",
     price:"",
     category:"Salad",
   })
@@ -29,6 +30,7 @@ const Add = ({url}) => {
   const formData = new FormData();
   formData.append("name" , data.name)
   formData.append("description" , data.description)
+  formData.append("desc2" , data.desc2)
   formData.append("price" , Number(data.price))
   formData.append("category" ,data.category)
   formData.append("image" , image)
@@ -39,6 +41,7 @@ const Add = ({url}) => {
     setData({
       name:"",
       description:"",
+      desc2:"",
       price:"",
       category:"Salad",
     })
@@ -76,12 +79,24 @@ const Add = ({url}) => {
           <p>Product Name</p>
           <input onChange={onChangeHandler} value={data.name} type="text" name="name" placeholder="Type here" />
         </div>
+
         <div className="add-product-description flex-col">
           <p>Product Description</p>
           <textarea
           onChange={onChangeHandler} value={data.description} 
             name="description"
             rows="6"
+            placeholder="Write content here"
+            required
+          ></textarea>
+        </div>
+
+        <div className="add-product-description flex-col">
+          <p>Detailed Product Description</p>
+          <textarea
+          onChange={onChangeHandler} value={data.desc2} 
+            name="desc2"
+            rows="10"
             placeholder="Write content here"
             required
           ></textarea>

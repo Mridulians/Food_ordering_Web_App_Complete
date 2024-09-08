@@ -1,0 +1,68 @@
+.food-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.food-desc-page-image {
+  border-radius: 5px;
+}
+
+.food-des-addtocart {
+  width: fit-content;
+  /* background-color: lightgreen; */
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.food-des-incremtor {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  border: 2px solid black;
+  width: fit-content;
+  padding: 10px;
+}
+
+.food-desc-increment-signs {
+  background-color: lightgray;
+  padding: 0px 10px;
+}
+
+.food-desc-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.food-desc-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.food-desc-desc2 {
+  font-size: 20px;
+}
+
+.food-desc-price-para {
+  width: fit-content;
+  background-color: tomato;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .food-description {
+    flex-direction: column;
+  }
+}
